@@ -101,6 +101,9 @@
     font-size: 2rem;
     cursor: pointer;
 }
+.blog-modal-close-btn{
+    font-size: 2rem;
+}
 .blog-post-content {
     margin-top: 1rem;
     line-height: 1.6;

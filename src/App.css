@@ -831,6 +831,10 @@ body{
   font-size: .9rem;
   margin: 0;
 }
+.footer-links li{
+  text-decoration: none;
+  color: white;
+}
 .footer-content-data p{
  font-size: .8rem;
  font-weight: 100;
@@ -855,9 +859,23 @@ body{
 .footer__social i:hover{
   color: #fc9514;
 }
-.footer-content-data li{
+.footer-links li{
   list-style: none;
-  cursor: pointer;
+}
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit;        /* Inherits the color from the parent element */
+}
+.footer-links a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit;        /* Inherits the color from the parent element */
+}
+
+/* Optionally, you can add more styling for hover and focus states */
+.footer-links a:hover,
+.footer-links a:focus {
+  color: inherit;        /* Keeps the color the same on hover/focus */
+  text-decoration: none; /* Ensures no underline on hover/focus */
 }
 .footer-bottom{
   display: flex;

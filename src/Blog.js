@@ -1,5 +1,6 @@
 import React from "react";
 import BlogData from "./BlogData";
+import { Link }  from 'react-router-dom'
 
 export default function Achievements() {
     return (
@@ -8,7 +9,8 @@ export default function Achievements() {
             <h3 className="achievement-title">Latest Posts</h3>
             <div className="blog-card-container">
                 {BlogData.map((item, index) => (
-                    <div className="blog-card" key={index}>
+                     <Link to="/blog">
+                        <div className="blog-card" key={index}>
                         <img
                             src={item.image}
                             width="100%"
@@ -20,6 +22,7 @@ export default function Achievements() {
                             <h4>{item.title}</h4>
                         </div>
                     </div>
+                    </Link>
                 ))}
             </div>
         </div>

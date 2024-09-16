@@ -53,6 +53,9 @@ export default function BlogPage() {
                             className="blog-post-content"
                             dangerouslySetInnerHTML={{ __html: marked(selectedPost.post) }}
                         />
+                        <span className="blog-modal-close-btn" onClick={handleClose}>
+                        <i className="ri-arrow-left-s-line"></i>
+                            </span>
                     </div>
                 </div>
             )}
