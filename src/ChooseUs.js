@@ -31,7 +31,10 @@ export default function ChooseUS() {
                 </button>
             </div>
             <div className="choose-us-img">
-                <img src="choose-us.png" alt="Graphic showing the benefits of choosing our service" />
+                <img 
+                    src={`${process.env.PUBLIC_URL}/choose-us.png`} 
+                    alt="Graphic showing the benefits of choosing our service" 
+                />
                 <div className="choose-highlight">
                     <div className="choose-image-header">
                         <h1>71%</h1>
@@ -45,5 +48,5 @@ export default function ChooseUS() {
             </div>
             <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
         </div>
-    )
+    );
 }

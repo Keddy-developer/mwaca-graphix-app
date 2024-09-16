@@ -31,7 +31,7 @@ export default function BlogPage() {
             <div className='blogpage-card-container'>
                 {BlogPageData.map((item, index) => (
                     <div className='blogpage-card' key={index}>
-                        <img src={item.image} width="100%" height="100%" alt={item.title} />
+                        <img src={`${process.env.PUBLIC_URL}/${item.image}`} width="100%" height="100%" alt={item.title} />
                         <div className="blog-page-data">
                             <h5>{item.date}</h5>
                             <h4>{item.title}</h4>
@@ -47,15 +47,15 @@ export default function BlogPage() {
                         <div className='blog-close-btn'>
                             <span className="blog-modal-close" onClick={handleClose}>&times;</span>
                         </div>
-                        <img src={selectedPost.image} width="100%" height="auto" alt={selectedPost.title} />
+                        <img src={`${process.env.PUBLIC_URL}/${selectedPost.image}`} width="100%" height="auto" alt={selectedPost.title} />
                         <h4>{selectedPost.title}</h4>
                         <div 
                             className="blog-post-content"
                             dangerouslySetInnerHTML={{ __html: marked(selectedPost.post) }}
                         />
                         <span className="blog-modal-close-btn" onClick={handleClose}>
-                        <i className="ri-arrow-left-s-line"></i>
-                            </span>
+                            <i className="ri-arrow-left-s-line"></i>
+                        </span>
                     </div>
                 </div>
             )}

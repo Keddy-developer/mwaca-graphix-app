@@ -42,7 +42,11 @@ export default function AboutUs() {
         <div className='team-section-image-container'>
           <div className='team-section-image'>
             {/* Add alt prop with meaningful text or an empty string */}
-            <img src='profile-1.jpg' width='100%' alt="Ibrahim Njoroge - Creative Lead" />
+            <img 
+              src={`${process.env.PUBLIC_URL}/profile-1.jpg`} 
+              width='100%' 
+              alt="Ibrahim Njoroge - Creative Lead" 
+            />
             <div className='team-section-image-description'>
               <h4>Ibrahim Njoroge</h4>
               <h5>Creative Lead</h5>

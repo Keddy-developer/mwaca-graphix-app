@@ -15,7 +15,7 @@ export default function PortfolioPage() {
                 {PortfolioPageData.map((item, index) => (
                     <div key={index} className='portfolio-page-card'>
                         <img 
-                            src={item.image} 
+                            src={`${process.env.PUBLIC_URL}/${item.image}`} 
                             alt={item.title} // Added meaningful alt text
                             width="100%" 
                         />
@@ -32,4 +32,3 @@ export default function PortfolioPage() {
         </div>
     );
 }
-

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function MoreAboutUs() {
     return (
@@ -11,18 +11,18 @@ export default function MoreAboutUs() {
             </p>
             <div className="btn">
                 <button className="moreabout-btn">
-                <Link to="/about" className={('/about')} >Read more</Link>
+                    <Link to="/about" className={('/about')} >Read more</Link>
                 </button>
             </div>
             <div className="more-about-img">
                 {/* Added alt attribute with meaningful text */}
-                <img className="more-image" src="more.png" alt="More about Mwaca Graphix" />
+                <img className="more-image" src={`${process.env.PUBLIC_URL}/more.png`} alt="More about Mwaca Graphix" />
                 <div className="more-about-highlight">
                     <div className="more-about-header">
                         <h1>We Take Pride in Our Clients' Satisfaction</h1>
                         <div className="up-arrow-2">
                             {/* Added alt attribute with meaningful text */}
-                            <img src="badge.png" alt="Badge icon" width="60px" />
+                            <img src={`${process.env.PUBLIC_URL}/badge.png`} alt="Badge icon" width="60px" />
                         </div>
                     </div>
                     <p>

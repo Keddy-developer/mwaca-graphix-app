@@ -72,8 +72,8 @@ export default function Header() {
         <div>
             <div className='header-container'>
                 <div className='logo' onClick={handleLogoClick}>
-                    <img src='logo192.png' width="80px" height="80px" alt="logo" />
-                    <img src='logo.png' width="170px" alt="logo text" />
+                    <img src={`${process.env.PUBLIC_URL}/logo192.png`} width="80px" height="80px" alt="logo" />
+                    <img src={`${process.env.PUBLIC_URL}/logo.png`} width="170px" alt="logo text" />
                 </div>
 
                 <div className='nav-menu' ref={menuRef}>

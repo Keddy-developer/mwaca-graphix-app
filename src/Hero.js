@@ -19,7 +19,8 @@ export default function Hero() {
                     <h3>Digital Printing</h3>
                     <p>Vibrant, high-quality digital prints</p>
                 </div>
-                <img className="hero-image" src="hero-icon.png" alt="Hero Icon" />
+                {/* Use process.env.PUBLIC_URL to reference the image */}
+                <img className="hero-image" src={`${process.env.PUBLIC_URL}/hero-icon.png`} alt="Hero Icon" />
                 <div className="hero-graphic-design">
                     <h3>Graphics Design</h3>
                     <p>Transforming ideas into visually stunning designs</p>

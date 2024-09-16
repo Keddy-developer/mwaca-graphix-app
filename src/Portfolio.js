@@ -10,8 +10,12 @@ export default function Achievements() {
         {PortfolioData.map((item, index) => {
           return (
             <div className="portfolio-card" key={index}>
-              {/* Added alt attribute with meaningful text */}
-              <img src={item.image} alt={item.title} width="100%" />
+              {/* Use process.env.PUBLIC_URL to reference images */}
+              <img
+                src={`${process.env.PUBLIC_URL}/${item.image}`}
+                alt={item.title}
+                width="100%"
+              />
               <div className="portfolio-card-info">
                 <h3>{item.title}</h3>
                 <p>{item.category} • Mwaca Graphix</p>

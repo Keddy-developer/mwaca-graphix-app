@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
         <div className="footer-section">
             <div className="footer-container">
                 <div className='logo-2'>
-                    <img src='footer-logo.png' width="80px" height="80px" alt="logo" />
-                    <img src='footer-logo-2.png' width="170px" alt="logo text" />
+                    <img src={`${process.env.PUBLIC_URL}/footer-logo.png`} width="80px" height="80px" alt="logo" />
+                    <img src={`${process.env.PUBLIC_URL}/footer-logo-2.png`} width="170px" alt="logo text" />
                 </div>
                 <div>
                     <div className="footer-top-content">
@@ -43,12 +43,12 @@ export default function Footer() {
                     <div className="footer-content-mid">
                         <div className="footer-content-data">
                             <h5>Quick links</h5>
-                            <ul  className="footer-links">
-                            <li><Link to="/" >Home</Link></li>
-                                    <li><Link to="/about">About</Link></li>
-                                    <li><Link to="/blog">Blog</Link></li>
-                                    <li><Link to="/portfolio">Portfolio</Link></li>
-                                    <li><Link to="/contact">Contact</Link></li>
+                            <ul className="footer-links">
+                                <li><Link to="/" >Home</Link></li>
+                                <li><Link to="/about">About</Link></li>
+                                <li><Link to="/blog">Blog</Link></li>
+                                <li><Link to="/portfolio">Portfolio</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </div>
                         <div className="footer-content-data">
