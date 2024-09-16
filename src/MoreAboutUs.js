@@ -11,7 +11,7 @@ export default function MoreAboutUs() {
             </p>
             <div className="btn">
                 <button className="moreabout-btn">
-                 <Link to="/blog" className={getLinkClass('/blog')} >Read more</Link>
+                 <Link to="/about" className={('/about')} >Read more</Link>
                 </button>
             </div>
             <div className="more-about-img">
