@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function MoreAboutUs() {
     return (
@@ -11,7 +10,7 @@ export default function MoreAboutUs() {
             </p>
             <div className="btn">
                 <button className="moreabout-btn">
-                    <Link to="/about" className={('/about')} >Read more</Link>
+                    <a href="/blog">Read more</a>
                 </button>
             </div>
             <div className="more-about-img">
